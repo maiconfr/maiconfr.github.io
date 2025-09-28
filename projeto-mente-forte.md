@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Welcome to another page
+## Projeto Mente Forte
 
 _yay_
 
