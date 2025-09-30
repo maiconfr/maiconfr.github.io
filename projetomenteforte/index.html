@@ -88,15 +88,27 @@ header .imagem img {
 }
 
 /* Esconde por padrão */
-.so-celular {
+.so-celular,
+.so-desktop {
   display: none;
 }
 
-/* Mostra só em telas pequenas (até 768px, típico mobile/tablet) */
+/* Mostra só no celular (até 768px) */
 @media (max-width: 768px) {
   .so-celular {
     display: block;
   }
+}
+
+/* Mostra só no desktop (a partir de 769px) */
+@media (min-width: 769px) {
+  .so-desktop {
+    display: block;
+  }
+}
+
+.bigua-celular {
+  max-width: 200px;
 }
 </style>
 
@@ -120,7 +132,7 @@ header .imagem img {
           <h1>Projeto Mente Forte</h1>
           <h2>Projeto de Taekwondo</h2>
         </div>
-        <div class="imagem">
+        <div class="imagem so-desktop">
           <img src="/projetomenteforte/images/pmftkd.png" alt="Logo Projeto Mente Forte">
         </div>
       </div>
@@ -206,8 +218,8 @@ header .imagem img {
       </div>
     </div>
 
-    <div class="centralizada so-celular">
-      <img src="/projetomenteforte/images/pmftkd.png" alt="Logo Projeto Mente Forte">
+    <div class="centralizada so-celular" >
+      <img src="/projetomenteforte/images/pmftkd.png" class="bigua-celular centralizada" alt="Logo Projeto Mente Forte">
     </div>
 
     <footer>
